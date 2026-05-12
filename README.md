@@ -1,9 +1,41 @@
+# Real-Time Multiplayer Tic-Tac-Toe Platform
+
+A full-stack multiplayer Tic-Tac-Toe platform featuring biometric authentication, real-time gameplay using WebSockets, polyglot persistence with MySQL and MongoDB, and Elo-based matchmaking.
+
+## Features
+
+- Facial recognition-based authentication
+- Real-time multiplayer lobby using WebSockets
+- Live Tic-Tac-Toe gameplay
+- Server-authoritative game state validation
+- Elo rating and leaderboard system
+- MySQL for structured relational data
+- MongoDB for profile image storage
+- Automated scraping pipeline for player onboarding
+
+## Tech Stack
+
+### Backend
+- FastAPI
+- WebSockets
+- MySQL
+- MongoDB
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+
+### Other
+- uv package manager
+- face_recognition
+
 ## To Run The Project
 
 First Clone the Project
 
 ```bash 
-git clone git@github.com:CS6201/project-sandwhich.git
+git clone git@github.com:anma07/realtime-tictactoe.git
 ```
 
 ### 1. Setup Environment Variables
@@ -86,11 +118,4 @@ http://<YOUR_IP>:5500/public/login.html
 
 Enjoy!
 
-## Project Overview
-
-This project is a real-time multiplayer Tic-Tac-Toe system with:
-- Facial recognition-based login
-- MySQL for structured user data
-- MongoDB for profile images
-- WebSocket-based real-time lobby and gameplay
-- Elo rating system for leaderboard
+This was made as part of CS6201 (Introduction to Software Systems) Course Project
