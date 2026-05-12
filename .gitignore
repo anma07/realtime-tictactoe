@@ -6,3 +6,7 @@ __pycache__/
 
 # To not upload the Database
 students.db
+
+.DS_Store
+.idea/
+.vscode/
