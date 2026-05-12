@@ -1,5 +1,7 @@
 # Real-Time Multiplayer Tic-Tac-Toe Platform
 
+This was made as part of CS6201 (Introduction to Software Systems) Course Project
+
 A full-stack multiplayer Tic-Tac-Toe platform featuring biometric authentication, real-time gameplay using WebSockets, polyglot persistence with MySQL and MongoDB, and Elo-based matchmaking.
 
 ## Features
@@ -117,5 +119,3 @@ http://<YOUR_IP>:5500/public/login.html
 - All users are authenticated using facial recognition only.
 
 Enjoy!
-
-This was made as part of CS6201 (Introduction to Software Systems) Course Project
