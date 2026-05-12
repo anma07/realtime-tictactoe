@@ -1,0 +1,117 @@
+:root {
+    --bg-color: #020205;
+    --container-bg: rgba(6, 6, 12, 0.9);
+    --accent-blue: #00d4ff;
+    --accent-red: #ff004c;
+    --accent-gold: #ffcc00; /* For the Top Rank */
+    --text-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Impact, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    /* Matching grid from previous pages */
+    background-image: 
+        linear-gradient(rgba(0, 212, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 212, 255, 0.07) 1px, transparent 1px);
+    background-size: 50px 50px;
+    color: var(--text-color);
+}
+
+.header {
+    text-align: center;
+    padding: 50px 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 0, 76, 0.1), transparent);
+    border-bottom: 2px solid var(--accent-red); /* Red accent for the high-stakes board */
+}
+
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: var(--accent-red);
+    text-shadow: 0 0 20px rgba(255, 0, 76, 0.6);
+    margin: 0;
+}
+
+.container {
+    margin-top: 40px;
+    width: 90%;
+    max-width: 1000px;
+    background: var(--container-bg);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    clip-path: polygon(0 0, 97% 0, 100% 3%, 100% 100%, 3% 100%, 0 97%); /* Beveled corners */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead th {
+    text-align: left;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--accent-blue);
+    border-bottom: 2px solid var(--accent-blue);
+    font-size: 1.1rem;
+}
+
+tbody td {
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+}
+
+/* Row Hover Effect */
+tbody tr {
+    transition: all 0.3s ease;
+}
+
+tbody tr:hover {
+    background: rgba(0, 212, 255, 0.1);
+    box-shadow: inset 5px 0 0 var(--accent-blue);
+}
+
+/* Special styling for Rank #1 */
+tbody tr:first-child td:first-child {
+    color: var(--accent-gold);
+    font-weight: bold;
+    text-shadow: 0 0 10px var(--accent-gold);
+}
+
+.nav-buttons {
+    margin: 50px 0;
+}
+
+.nav-btn {
+    text-decoration: none;
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid var(--accent-blue);
+    color: var(--accent-blue);
+    transition: all 0.3s ease;
+    display: inline-block;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);
+}
+
+.nav-btn:hover {
+    background: var(--accent-blue);
+    color: #000;
+    box-shadow: 0 0 20px var(--accent-blue);
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lobby</title>
+    <link rel="icon" type="image/png" href="game.png">
+    <link rel="stylesheet" href="../css/lobby.css">
+</head>
+<body>
+
+<div class="header">
+    <h2>🎮 Live Lobby</h2>
+    <p class="subtitle">Challenge other players to a match!</p>
+    <p id="uid-display"></p>
+</div>
+
+<div id="users">
+    <p>Connecting...</p>
+</div>
+
+<div class="nav-buttons">
+    <button id="leaderboardBtn" class="nav-btn">📊 Leaderboard</button>
+</div>
+
+<script>
+    // Show own UID in header
+    const _uid = new URLSearchParams(window.location.search).get("uid");
+    if (_uid) document.getElementById("uid-display").innerText = `Logged in as: ${_uid}`;
+</script>
+<script src="../js/lobby.js"></script>
+</body>
+</html>

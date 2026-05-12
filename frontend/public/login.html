@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="game.png">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Face Login</h1>
+
+        <!-- Username -->
+        <input type="text" id="username" placeholder="Enter your name">
+
+        <!-- Video Preview -->
+        <video id="video" autoplay playsinline muted width="500" height="300" style="background: black;"></video>
+
+        <!-- Hidden canvas (used for capture) -->
+        <canvas id="canvas" style="display:none;"></canvas>
+
+        <!-- Buttons -->
+        <button id="startBtn" onclick="startCamera()">Start Camera</button>
+        <button id="captureBtn">Capture & Login</button>
+
+        <p id="status"></p>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>

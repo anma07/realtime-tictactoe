@@ -1,0 +1,107 @@
+:root {
+    --bg-color: #050505;
+    --container-bg: rgba(10, 10, 20, 0.8);
+    --accent-blue: #00d4ff;
+    --accent-red: #ff004c;
+    --text-color: #e0e0e0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Modern sans-serif is more futuristic than Times */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    /* Subtle grid background effect */
+    background-image: linear-gradient(rgba(0, 212, 255, 0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0, 212, 255, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+    color: var(--text-color);
+}
+
+.container {
+    text-align: center;
+    background: var(--container-bg);
+    padding: 40px;
+    border: 1px solid var(--accent-blue);
+    border-radius: 5px; /* Sharp corners or very slight radius look more 'tech' */
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.2), inset 0 0 10px rgba(0, 212, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: var(--accent-blue);
+    text-shadow: 0 0 10px var(--accent-blue);
+}
+
+input[type="text"] {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #444;
+    padding: 12px;
+    color: white;
+    width: 80%;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: var(--accent-blue);
+}
+
+video {
+    width: 100%;
+    height: auto;
+    background: #000;
+    border: 2px solid var(--accent-red);
+    box-shadow: 0 0 15px rgba(255, 0, 76, 0.4);
+    margin: 20px 0;
+    display: block;
+    clip-path: polygon(5% 0, 100% 0, 100% 90%, 95% 100%, 0 100%, 0 10%); /* Angular cropped corners */
+}
+
+button {
+    margin: 10px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--accent-red);
+    background: transparent;
+    color: var(--accent-red);
+}
+
+button:hover {
+    background: var(--accent-red);
+    color: #fff;
+    box-shadow: 0 0 20px var(--accent-red);
+}
+
+#startBtn {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+#startBtn:hover {
+    background: var(--accent-blue);
+    color: #000;
+    box-shadow: 0 0 20px var(--accent-blue);
+}
+
+#status {
+    margin-top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: var(--accent-blue);
+}
